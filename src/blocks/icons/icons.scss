@@ -1,0 +1,29 @@
+.icon {
+    &__burger{
+        width: 24px;
+        height: 16px;
+        fill: $burger-color;
+    }
+    &__help {
+        width: 16px;
+        height: 16px;
+        fill: $dark-green;
+    }
+    &__baseline-close{
+        width: 30px;
+        height: 30px;
+        fill: $burger-color;
+    }
+    &__enter {
+        width: 15px;
+        height: 16px;
+        fill: #fff;
+        &.mobile {
+          fill: $icon-open-color;
+        }
+    }
+    &__logo {
+      width: 81px;
+      height: 24px;
+    }
+}

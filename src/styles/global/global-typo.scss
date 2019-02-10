@@ -1,0 +1,141 @@
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 33px;
+  }
+
+  @media (min-width: $laptop-width) {
+    font-size: 53px;
+  }
+    
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 26px;
+
+  @media (min-width: $laptop-width) {
+    font-size: 33px;
+  }
+}
+
+h3 {
+  
+}
+
+h4 {
+  
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+b {
+  
+}
+
+strong {
+  
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+  
+  }
+}
+
+ol {
+  
+  li {
+    
+  }
+}
+
+table {
+  
+}
+
+tr {
+  
+}
+
+th {
+  
+}
+
+td {
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+}
+
+img {
+  
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

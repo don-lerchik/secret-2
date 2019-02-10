@@ -1,0 +1,54 @@
+mixin header(modifier)
+  -var modifier = modifier || {}
+  -var domens = modifier.domens  || ''
+  -var contentMain = modifier.contentMain  || ''
+  -var contentSubMain= modifier.contentSubMain || ''
+  -var contact = modifier.contact || ''
+  .header&attributes(attributes)
+    mixin header__content(content,type = '')
+      -var content = content || {} 
+      -if (type) {
+        +link({text: 'Закрыть', visible: 'false' })(class= 'header__logIn header__logIn--mobile')
+          +icon('baseline-close') 
+      -}
+      -else {
+        +link({text: 'Открыть', visible: 'false' })(class= 'header__logIn')
+          +icon('burger')
+      -}
+      a(href = 'index.html')(class = 'header__logo')
+        +icon('logo')
+      .header__contact
+        +link(contact.phone)(class = 'header__contact--phone')
+        +link(contact.email)(class = 'header__contact--email') 
+      ul.header__typePage
+        each val in domens
+          +item-link(val)(class = 'header__typePage-item')
+      nav.main-nav
+        -if (type) {
+          .main-nav__logIn.main-nav__logIn--mob
+            +link({ text: 'Вход в личный кабинет'})
+              +icon('enter','mobile')
+        -}
+        -else {
+          .main-nav__logIn
+            +link({ text: 'Войти'})
+              +icon('enter')
+        -}
+        ul.main-nav__contentMaint
+          each val in contentMain
+            +item-link(val)(class = 'main-nav__item' )
+        ul.main-nav__contentSubMain
+          each val in contentSubMain
+            -if (val.text === 'Помощь') {
+              +item-link(val)(class = 'main-nav__item' )
+                +icon('help')
+            -} else {
+              +item-link(val)(class = 'main-nav__item' )
+            -}
+    .header__content.header__content--mobile
+      +header__content(modifier,'mobile')
+    .header__content
+      +header__content(modifier)
+
+   
+      

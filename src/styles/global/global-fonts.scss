@@ -1,0 +1,30 @@
+/* IBM Plex Sans-regular - cyrillic_latin */
+@font-face {
+  font-weight: normal;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;;
+  font-style: normal;
+  src: url("../IBMPlexSans-Regular.ttf") format("woff2")
+}
+/* IBM Plex Sans-medium - cyrillic_latin */
+@font-face {
+  font-weight: 500;
+  font-family:"IBM Plex Sans", "Arial", sans-serif;;
+  font-style: normal;
+  src: url("../IBMPlexSans-Medium.ttf") format("woff2")
+}
+
+/* IBM Plex Sans-semi-bold - cyrillic_latin */
+@font-face {
+  font-weight: 600;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;;
+  font-style: normal;
+  src: url("../IBMPlexSans-SemiBold.ttf") format("woff2")
+}
+
+/* IBM Plex Sans-bold - cyrillic_latin */
+@font-face {
+  font-weight: bold;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;;
+  font-style: normal;
+  src: url("../IBMPlexSans-Bold.ttf") format("woff2")
+}
